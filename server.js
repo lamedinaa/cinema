@@ -4,11 +4,11 @@ const path = require('path');
 const app = express();
 const Router = express.Router();
 // const mongoose = require('mongoose');
-const bodyParser = require("body-parser");
+// const bodyParser = require("body-parser");
 // const Schema = mongoose.Schema;
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.json());
 
 // mongoose.connect("mongodb://localhost/Movies");
 //
@@ -29,10 +29,10 @@ Router.get('/getmovies/',(req,res)=> {
     });
 })
 
-Router.post('/insertmovie/',(req,res) => {
-    console.log(req.body.nombre);
-    console.log(req.body.descripcion);
-});
+// Router.post('/insertmovie/',(req,res) => {
+//     console.log(req.body.nombre);
+//     console.log(req.body.descripcion);
+// });
 
 Router.get('/insertmovie/',(req,res)=> {
     res.json({
