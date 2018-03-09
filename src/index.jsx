@@ -19,7 +19,7 @@ render(
                     <Route  component={Page404}/>
                </Switch>
          </App>
-       </Router>
+     </Router>
     , document.getElementById('app'));
 
 
