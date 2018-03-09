@@ -3,7 +3,6 @@ import Axios from 'axios';
 
 class InsertMovie extends Component {
 
-
     _validateForm(event) {
         console.log("HOLA MUNDO");
         // event.preventDefault();

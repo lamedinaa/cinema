@@ -20,7 +20,6 @@ const Router = express.Router();
 // var movie_schema = new Schema(movie);
 // var movie = mongoose.model("movie",movie_schema);
 
-
 //querys
 app.use('/api/',Router);
 Router.get('/getmovies/',(req,res)=> {
