@@ -18,6 +18,7 @@ class App extends Component {
                                   <li><Link to="/"><h4>Board</h4></Link></li>
                                   <li><Link to="/insertmovie"><h4>Insert Movie</h4></Link></li>
                                   <li><Link to="/editmovie"><h4>Edit Movie</h4></Link></li>
+                                  <li><Link to="/insertmobx"><h4>Insert mobx</h4></Link></li>
                               </ul>
                         </div>
                    </nav>
