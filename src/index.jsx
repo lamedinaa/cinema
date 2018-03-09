@@ -9,15 +9,15 @@ import InsertMovie from './components/insert/insertmovie.jsx';
 import InsertMobx  from './components/insert/insertmobx.jsx';
 import EditMovie   from './components/edit/editmovie.jsx';
 import Page404     from './components/page404/page404.jsx';
-import store       from './components/store/TodoStore.jsx'; 
+import store       from './components/store/TodoStore.jsx';
 
 render(
     <Router >
-         <App>
+         <App store={store}>
                <Switch>
                     <Route exact path="/insertmovie"  component={InsertMovie}/>
                     <Route exact path="/editmovie"    component={EditMovie}/>
-                    <Route exact path="/insertmobx"   component={InsertMobx} />
+                    <Route exact path="/insertmobx"    component={InsertMobx} />
                     <Route exact path="/"  component={Board}/>
                     <Route  component={Page404}/>
                </Switch>

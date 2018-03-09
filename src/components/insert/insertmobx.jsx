@@ -1,15 +1,17 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Axiox from 'axios';
+import { observer } from 'mobx-react';
 
-
+@observer
 class InsertMobx extends Component {
-     construtor(props) {
-         console.log("hola mobx");
+     constructor(props) {
+         super(props);
+
      }
      render(){
          return (
              <div className="Insertmobx">
-                hola hago mis practicas de mbox!!
+                <h2>{this.props.store}</h2>
              </div>
          )
      }

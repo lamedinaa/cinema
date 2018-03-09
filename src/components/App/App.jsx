@@ -1,9 +1,13 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
+import { observer } from 'mobx-react';
 
+@observer
 class App extends Component {
     constructor(props){
 		super(props);
+        console.log("hola app");
+        console.log(this.props.store.todos[0]);
 	}
 
     render() {
@@ -24,7 +28,9 @@ class App extends Component {
                    </nav>
 
                 <br></br>
-
+                <div className="container">
+                    <h2>{this.props.store.todos[0]}</h2>
+                </div>
                 <div className="container">
                     {this.props.children}
                 </div>
