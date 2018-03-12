@@ -11,7 +11,7 @@ class InsertMobx extends Component {
      }
 
      filter(e) {
-         this.store.filter = e.target.value
+         this.store.filter = e.target.value;
      }
 
 
