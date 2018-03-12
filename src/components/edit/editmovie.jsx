@@ -1,5 +1,8 @@
-import React, {Component} from 'react'; 
+import React, {Component} from 'react';
+import {observer} from 'mobx-react';
 
+
+@observer
 class EditMovie extends Component {
     render() {
         return (

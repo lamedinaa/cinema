@@ -1,7 +1,7 @@
 import {autorun , observable} from 'mobx';
 
 class TodoStore {
-    @observable todos = ["buy milk","Pirate"]
+    @observable todos = ["movie pirata 1","Pirate"]
     @observable filter = ""
 }
 

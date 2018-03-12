@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Axios from 'axios';
+import {observer} from 'mobx-react';
 
+@observer
 class Board extends Component {
 
     constructor(props) {
